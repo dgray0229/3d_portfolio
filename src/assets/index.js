@@ -21,42 +21,64 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import ankitKarma from "./testimonial/ankit-karma.png";
+import josephKim from "./testimonial/joseph-kim.png";
+import henryTran from "./testimonial/henry-tran.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+
+import williamssonoma from "./company/williams-sonoma.png";
+import paypal from "./company/paypal.png";
+import humnutrition from "./company/hum-nutrition.png";
+import walmart from "./company/walmart.png";
+import wiredhat from "./company/wiredhat-interactive.png";
+import thig from "./company/thig.png";
+import devingray from "./company/devingray.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+	logo,
+	backend,
+	creator,
+	mobile,
+	web,
+	github,
+	menu,
+	close,
+	css,
+	docker,
+	figma,
+	git,
+	html,
+	javascript,
+	mongodb,
+	nodejs,
+	reactjs,
+	redux,
+	tailwind,
+	typescript,
+	threejs,
+	meta,
+	shopify,
+	starbucks,
+	tesla,
+	williamssonoma,
+	humnutrition,
+	paypal,
+	thig,
+	walmart,
+	wiredhat,
+	devingray,
+	ankitKarma,
+	josephKim,
+	henryTran,
+	carrent,
+	jobit,
+	tripguide,
 };

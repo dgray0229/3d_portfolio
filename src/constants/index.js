@@ -15,10 +15,16 @@ import {
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
+	walmart,
+	wiredhat,
+	humnutrition,
+	williamssonoma,
+	paypal,
+	thig,
+	devingray,
+	ankitKarma,
+	josephKim,
+	henryTran,
 	carrent,
 	jobit,
 	tripguide,
@@ -40,7 +46,7 @@ export const navLinks = [
 ];
 const services = [
 	{
-		title: "Web Developer",
+		title: "React Developer",
 		icon: web,
 	},
 	{
@@ -48,11 +54,11 @@ const services = [
 		icon: mobile,
 	},
 	{
-		title: "Backend Developer",
+		title: "Node.js Developer",
 		icon: backend,
 	},
 	{
-		title: "Content Creator",
+		title: "Software Creator",
 		icon: creator,
 	},
 ];
@@ -114,9 +120,9 @@ const experiences = [
 	{
 		title: "WordPress Developer",
 		company_name: "Wiredhat Interactive",
-		icon: starbucks,
+		icon: wiredhat,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "October 2017 - June 2019",
 		points: [
 			"Updated or built from scratch over 30 websites for over a dozen clients.",
 			"Created custom WordPress templates for companies to be able to edit on their own.",
@@ -126,9 +132,9 @@ const experiences = [
 	{
 		title: "Web Developer",
 		company_name: "The Home Improvement Guide",
-		icon: starbucks,
+		icon: thig,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "December 2019 - August 2020",
 		points: [
 			"Develop dynamic and engaging user experiences at The Home Improvement Guide, focusing on interactive site creation using jQuery, GSAP, Vue.js and WordPress, Laravel, and PHP as the underlying backend technologies.",
 			"Environments: HTML, CSS, PHP, jQuery, WordPress, REST API, GSAP, Vue.js, Laravel, Google Analytics, Matomo, Hotjar, Wrike, G Suite, Linux",
@@ -137,9 +143,9 @@ const experiences = [
 	{
 		title: "Vue.js UI Engineer",
 		company_name: "Williams Sonoma",
-		icon: starbucks,
+		icon: williamssonoma,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "August 2020 - November 2020",
 		points: [
 			"All six company branded sites were migrated to Vue.js in a major UI migration.",
 			"To make theme updates available to all branded sites at once, the workflow was optimized so that all branded sites use the same Vue.js template.",
@@ -150,9 +156,9 @@ const experiences = [
 	{
 		title: "Senior Frontend Developer",
 		company_name: "Hum Nutrition",
-		icon: tesla,
+		icon: humnutrition,
 		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
+		date: "September 2022 - November 2022",
 		points: [
 			"Developing and maintaining web applications using React.js and other related technologies.",
 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -161,9 +167,9 @@ const experiences = [
 	{
 		title: "Full-Stack Developer",
 		company_name: "PayPal",
-		icon: shopify,
+		icon: paypal,
 		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
+		date: "December 2020 - May 2022",
 		points: [
 			"Reduce the maximum loading time of marketing pages from 15 seconds to 6 seconds by developing UI components in React, TypeScript, and Jest.",
 			"RESTful APIs for processing Contentful data were developed to enable server-side rendering.",
@@ -173,9 +179,9 @@ const experiences = [
 	{
 		title: "Full-Stack Developer",
 		company_name: "Walmart",
-		icon: meta,
+		icon: walmart,
 		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
+		date: "June 2022 - February 2023",
 		points: [
 			"Built React, Typescript, and Jest to develop a UI Dashboard providing affiliate marketers the ability to select from hundreds of Walmart campaigns worldwide and track their progress. ",
 			"Integrate social media with OAuth so that affiliate metrics can be tracked, and users can be qualified for campaigns.",
@@ -185,9 +191,9 @@ const experiences = [
 	{
 		title: "Software Engineer",
 		company_name: "Devin Gray LLC",
-		icon: meta,
+		icon: devingray,
 		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
+		date: "June 2014 - Present",
 		points: [
 			"Build or worked on over 200 websites for over 150 small businesses and companies including Hum Nutrition, Thales, Versa Products, Let’s Design for You, Avital Web, SCSI Media, and Adler & Associates.",
 			"Taught and tutored coding bootcamp students partnered with Trilogy Education/2U.",
@@ -202,27 +208,27 @@ const experiences = [
 const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
+			"Devin is one of the Finest, Hardworking and Innovative Developer that i have ever Met and Placed.",
+		name: "Ankit Karma",
+		designation: "Siri Infosolutions Inc",
+		company: "Assistant Manager",
+		image: ankitKarma,
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
+			"He is an experienced developer with background in React and Wordpress. His knowledge was invaluable to the team as he shared the best practices and modern trends in the web industry. ",
+		name: "Joseph Kim",
+		designation: "Web Developer",
+		company: "MNTN",
+		image: josephKim,
 	},
 	{
 		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
+			"He is a very motivated, driven, and talented self starter who sees web development in many different ways. Devin was very helpful in assisting whenever a problem arose and engaged in constructive discussions about different patterns in solving a problem.",
+		name: "Henry Tran",
+		designation: "Software Engineer II",
+		company: "Privy",
+		image: henryTran,
 	},
 ];
 const projects = [
