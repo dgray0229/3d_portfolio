@@ -17,37 +17,37 @@ const ContactWrapper = () => {
 	const [loading, setLoading] = useState(false);
 
 	const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  };
+		const { name, value } = e.target;
+		setForm((prev) => ({ ...prev, [name]: value }));
+	};
 	const handleSubmit = (e) => {
-    e.preventDefault();
-        setLoading(true);
-        emailjs
-					.sendForm(
-						"service_61vbyjt",
-						"template_oaudhr3",
-						form,
-						"OeNhn9gENAwReKGGP"
-					)
-					.then(
-						(result) => {
-							console.log(result.text);
-							setLoading(false);
-							setForm({
-								name: "",
-								email: "",
-								message: "",
-							});
-						},
-						(error) => {
-							console.log(error.text);
-							setLoading(false);
-						}
-					);
-  };
+		e.preventDefault();
+		setLoading(true);
+		emailjs
+			.sendForm(
+				"service_61vbyjt",
+				"template_oaudhr3",
+				form,
+				"OeNhn9gENAwReKGGP"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					setLoading(false);
+					setForm({
+						name: "",
+						email: "",
+						message: "",
+					});
+				},
+				(error) => {
+					console.log(error.text);
+					setLoading(false);
+				}
+			);
+	};
 	return (
-		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+		<div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -59,45 +59,53 @@ const ContactWrapper = () => {
 					onSubmit={handleSubmit}
 					className="mt-12 flex flex-col gap-8"
 				>
-					<label for="name" className="flex flex-col">
+					<label htmlFor="name" className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
 							type="text"
 							name="name"
-              placeholder="What's your name?"
+							placeholder="What's your name?"
 							value={form.name}
 							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
 						/>
 					</label>
-					<label for="email" className="flex flex-col">
-						<span className="text-white font-medium mb-4">Your Name</span>
+					<label htmlFor="email" className="flex flex-col">
+						<span className="text-white font-medium mb-4">Your Email</span>
 						<input
 							type="email"
 							name="email"
-              placeholder="What's your email?"
+							placeholder="What's your email?"
 							value={form.email}
 							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
 						/>
 					</label>
-					<label for="message" className="flex flex-col">
-						<span className="text-white font-medium mb-4">Your Name</span>
+					<label htmlFor="message" className="flex flex-col">
+						<span className="text-white font-medium mb-4">Your Message</span>
 						<textarea
-            rows="7"
+							rows="7"
 							name="message"
-              placeholder="What do you want to say?"
+							placeholder="What do you want to say?"
 							value={form.message}
 							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
 						/>
 					</label>
-          <button type="submit" className="bg-tertiary py-4 px-6 outline-none w-fit rounded-lg text-white font-bold shadow-md shadow-primary">{loading ? 'Sending...' : 'Send'}</button>
+					<button
+						type="submit"
+						className="bg-tertiary py-4 px-6 outline-none w-fit rounded-lg text-white font-bold shadow-md shadow-primary"
+					>
+						{loading ? "Sending..." : "Send"}
+					</button>
 				</form>
 			</motion.div>
-      <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        <EarthCanvas />
-      </motion.div>
+			<motion.div
+				variants={slideIn("right", "tween", 0.2, 1)}
+				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+			>
+				<EarthCanvas />
+			</motion.div>
 		</div>
 	);
 };

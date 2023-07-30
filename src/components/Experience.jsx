@@ -47,7 +47,7 @@ const ExperienceWrapper = () => {
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline>
 					{experiences.map((experience, index) => (
-						<ExperienceCard key={index} experience={experience} />
+						<ExperienceCard key={`experience-${index}`} experience={experience} />
 					))}
 				</VerticalTimeline>
 			</div>

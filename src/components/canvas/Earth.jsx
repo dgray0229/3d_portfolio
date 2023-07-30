@@ -15,7 +15,7 @@ const Earth = () => {
 const EarthCanvas = () => (
 	<Canvas
 		shadows
-		frameLoop="demand"
+		frameloop="demand"
 		gl={{ preserveDrawingBuffer: true }}
 		camera={{ fov: 45, near: 0.1, far: 200, position: [-4, 3, 6] }}
 	>
@@ -27,6 +27,7 @@ const EarthCanvas = () => (
 				minPolarAngle={Math.PI / 2}
 			/>
 			<Earth />
+			<Preload all />
 		</Suspense>
 	</Canvas>
 );
